@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>ex020</title>
+    <style>
+        body{
+            background-color: rgb(215, 250, 232);
+        }
+        div{
+            height: 200px;
+            font-family: Verdana, Tahoma, sans-serif;
+            color: rgb(18, 13, 22);
+        }
+        .box{
+            text-align: center;
+            border:1px solid rgba(95, 95, 253, 0.63);
+            background-color: rgba(11, 121, 121, 0.822);
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+        .box:hover{ /* interação */
+            border:2px solid rgba(189, 35, 35, 0.904);
+            border-radius: 5px;
+            background-color: rgba(127, 80, 255, 0.671);
+            width: 220px;
+            color: rgb(0, 16, 158);
+        }
+        #txt > p{
+            height: 120px;
+            display: none;
+            font-size: 1em;
+        }
+        #txt:hover > p{ /* texto escondido */
+            display: block;
+            font-size: 1.2em;
+            color: rgb(222, 174, 135);
+            background-color: rgb(17, 16, 16);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes; hover</h1>
+    <hr>
+    <h2>Test</h2>
+    <div id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, repellat doloremque. Deserunt, facilis quasi nihil accusamus, architecto fuga aut mollitia esse nemo ratione nisi sint possimus. Quod minus vitae veritatis.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iure dolores doloribus, tempore eligendi vitae aperiam dignissimos unde consectetur, adipisci perferendis repellendus voluptatum, minima aliquid explicabo obcaecati facilis libero blanditiis?</p>
+    </div>
+    <div class="box"> 01 </div>
+    <div class="box"> 02 </div>
+    <div class="box"> 03 </div>
+    <a href="pt2.html">Part II</a>
+</body>
+</html>
