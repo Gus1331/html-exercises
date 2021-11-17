@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <a href="#" id="sair">Sair</a>
+    <h1>Formulário</h1>
+    <hr>
+    <main>
+        <form action="POST" action="./inscricao-club.html">
+            <h2>Inscrição do Clube</h2>
+            <p>Nome:<input type="text" name="nome"></p>
+            <p>Email:<input type="email" name="email"></p>
+            <p>Telefone: <input type="tel" name="telefone">Idade:<input type="number" name="idade" min=3 max=99></p>
+            <p>País:
+                <select name="pais">
+                    <option value="BR">Brasil</option>
+                    <option value="CA">CAnada</option>
+                    <option value="USA">Estados Unidos</option>
+                    <option value="other">Outro...</option>
+                </select>
+            </p>
+            <p>Endereço:<input type="text" name="endereco"></p>
+            <p>Gênero: <br>
+                <input type="radio" name="gender" value="m">M 
+                <input type="radio" name="gender" value="f">F 
+                <input type="radio" name="gender" value="o" checked>Outro 
+            </p>
+            <p>Digite uma senha: <input type="password" name="senha"></p>
+            <p>Digite novamente: <input type="password" name="senhaconfirma"></p>
+            <p>Avalie nossas atividades do clube: <br>
+                <mark>&#x1F615;<input type="range" name="like" min=-3 max=3>&#x1F642;</mark>
+            </p>
+            <input type="reset" value="Resetar"> <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>

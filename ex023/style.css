@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(95, 158, 160, 0.658);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+h1{
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    background-color: rgba(220, 20, 60, 0.76);
+    border-radius: 2px;
+    margin: 0;
+    overflow: auto;
+}
+p{
+    text-indent: 2em;
+    color: rgb(255, 255, 255);
+}
+div{
+    width: 80%;
+    height: 300px;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.959), rgba(0, 0, 0, 0.959));
+    border: 3px solid rgb(255, 255, 255);
+    margin: auto;
+}
+
+@media screen and (max-width:500px) { /* Define CSS em caso de resolução abaixo de 500px, caso não tenha especificações para certa propriedade, vai manter as que foram configuradas anteriormente */
+    body{
+        background-color:rgb(169, 214, 163);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 13px;
+    }
+    h1{
+        background-color: rgb(179, 56, 216);
+        border-radius: 1px;
+    }
+    div{
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.959), rgba(0, 0, 0, 0.959));
+        border: 1px solid rgb(255, 255, 255);
+    }
+    P{
+        color: black;
+    }
+}
+@media screen and (max-width:400px) { /* telas menores de 300px (mantem as configurações de 500px também)*/
+    body{
+        background-color: rgb(7, 0, 0);
+    }
+    h1{
+        font-size: 2em;
+    }
+}
