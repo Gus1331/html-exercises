@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+    margin: 60px;
+    background-color: rgb(179, 245, 220);
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+hr{
+    margin-bottom: 100px;
+}
+
+div.square{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border:2px solid rgba(12, 0, 0, 0.959);
+    border-radius: 2%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    font-family: monospace;
+}
+div#bc1{
+    background-color: rgb(87, 18, 216);
+}
+div#bc2{
+    background-image: linear-gradient(to bottom, rgb(167, 23, 167), rgb(51, 255, 255));
+}
+div#bc3{
+    background-image: url(imgs/pattern-ex025-1.png);
+}

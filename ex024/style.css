@@ -67,6 +67,16 @@ p{
 }
 input{
     height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.062);
+    padding: 1px;
+    padding-left: 4px;
+    margin-left: 3px;
+}
+input:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.432);
 }
 mark{
     background: none;
@@ -76,24 +86,44 @@ mark{
     display: inline-block;
     width: 80%;
 }
+#email{
+    max-width: 90%;
+    min-width: 30%;
+}
 #age{
-
+    width: 40px;
 }
 #range{
-
-}
-#tel{
-
+    width: 50%;
+    min-width: 60px;
 }
 #address{
-
+    width: 80%;
 }
-.password{
-
+#club{
+    margin-top: 20px;
+}
+select{
+    width: max-content;
+    text-align: center;
 }
 .radio{
-
+    margin-right: 3px;
+    margin-left: 5px;
 }
 .button{
+    padding: 5px;
+    background-color: rgb(247, 128, 148);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    height: max-content;
+    margin: auto;
 
+}
+.button:hover{
+    background-color: rgba(247, 128, 148, 0.733);
+    color: rgba(255, 254, 254, 0.575);
+    border: 1px solid rgba(92, 13, 56, 0.671);
+    cursor: pointer;
 }

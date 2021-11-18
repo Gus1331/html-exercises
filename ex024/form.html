@@ -9,14 +9,14 @@
 </head>
 <body>
     <a href="#" id="sair">Sair</a>
-    <h1>Formulário</h1>
+    <h1>ex024</h1>
     <hr>
     <main>
         <form action="POST" action="./inscricao-club.html">
             <h2>Inscrição do Clube</h2>
             <p>Nome:<input id="name" type="text" name="nome"></p>
-            <p>Email:<input id="email" type="email" name="email">
-                Telefone: <input id="tel" type="tel" name="telefone">Idade:<input id="age" type="number" name="idade" min=3 max=99></p>
+            <p>Email:<input id="email" type="email" name="email">  
+                Telefone:<input id="tel" type="tel" name="telefone">  Idade:<input id="age" type="number" name="idade" min=3 max=99></p>
             <p>País:
                 <select name="pais">
                     <option value="BR">Brasil</option>
@@ -33,7 +33,7 @@
             </p>
             <p>Digite uma senha: <input class="password" type="password" name="senha"></p>
             <p>Digite novamente: <input class="password" type="password" name="senhaconfirma"></p>
-            <p>Avalie nossas atividades do clube: <br>
+            <p id="club">Avalie nossas atividades do clube: <br>
                 <mark>&#x1F615;<input id="range" type="range" name="like" min=-3 max=3>&#x1F642;</mark>
             </p>
             <input class="button" type="reset" value="Resetar"> <input class="button" type="submit" value="Enviar">
