@@ -14,29 +14,29 @@
     <main>
         <form action="POST" action="./inscricao-club.html">
             <h2>Inscrição do Clube</h2>
-            <p>Nome:<input type="text" name="nome"></p>
-            <p>Email:<input type="email" name="email"></p>
-            <p>Telefone: <input type="tel" name="telefone">Idade:<input type="number" name="idade" min=3 max=99></p>
+            <p>Nome:<input id="name" type="text" name="nome"></p>
+            <p>Email:<input id="email" type="email" name="email">
+                Telefone: <input id="tel" type="tel" name="telefone">Idade:<input id="age" type="number" name="idade" min=3 max=99></p>
             <p>País:
                 <select name="pais">
                     <option value="BR">Brasil</option>
-                    <option value="CA">CAnada</option>
+                    <option value="CA">Canadá</option>
                     <option value="USA">Estados Unidos</option>
                     <option value="other">Outro...</option>
                 </select>
             </p>
-            <p>Endereço:<input type="text" name="endereco"></p>
+            <p>Endereço:<input id="address" type="text" name="endereco"></p>
             <p>Gênero: <br>
-                <input type="radio" name="gender" value="m">M 
-                <input type="radio" name="gender" value="f">F 
-                <input type="radio" name="gender" value="o" checked>Outro 
+                <input class="radio" type="radio" name="gender" value="m">M
+                <input class="radio" type="radio" name="gender" value="f">F
+                <input class="radio" type="radio" name="gender" value="o" checked>Outro
             </p>
-            <p>Digite uma senha: <input type="password" name="senha"></p>
-            <p>Digite novamente: <input type="password" name="senhaconfirma"></p>
+            <p>Digite uma senha: <input class="password" type="password" name="senha"></p>
+            <p>Digite novamente: <input class="password" type="password" name="senhaconfirma"></p>
             <p>Avalie nossas atividades do clube: <br>
-                <mark>&#x1F615;<input type="range" name="like" min=-3 max=3>&#x1F642;</mark>
+                <mark>&#x1F615;<input id="range" type="range" name="like" min=-3 max=3>&#x1F642;</mark>
             </p>
-            <input type="reset" value="Resetar"> <input type="submit" value="Enviar">
+            <input class="button" type="reset" value="Resetar"> <input class="button" type="submit" value="Enviar">
         </form>
     </main>
 </body>

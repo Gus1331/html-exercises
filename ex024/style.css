@@ -1,5 +1,4 @@
 @charset "UTF-8";
- /* Totalmente responsivo :) */
 *{
     margin: 0;
     padding: 0;
@@ -56,14 +55,45 @@ main{
     box-shadow: 10px 10px 20px rgba(17, 0, 49, 0.336);
 }
 h2{
-    text-indent: 20px;
-    margin: 10px;
+    padding-left: 30px;
     font-size: 1.8em;
+    margin-bottom: 20px;
+}
+form{
+    padding: 3em;
 }
 p{
-
+    line-height: 2em;
+}
+input{
+    height: 20px;
 }
 mark{
     background: none;
     font-size: 2em;
+}
+#name{
+    display: inline-block;
+    width: 80%;
+}
+#age{
+
+}
+#range{
+
+}
+#tel{
+
+}
+#address{
+
+}
+.password{
+
+}
+.radio{
+
+}
+.button{
+
 }
