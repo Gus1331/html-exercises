@@ -1,0 +1,50 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* SHORTHAND
+    background: (color) (image) (position) (repeat) (attchment);
+    
+    Ex:
+    background: black url(image.png) center center no-repeat fixed;
+*/
+
+body{
+    margin: 30px;
+    margin-bottom: 0;
+    background-color: rgb(53, 53, 104);
+}
+img{
+    float: right;
+    width: 100px;
+    position: relative;
+    top: -20px;
+    border: 3px solid rgb(255, 41, 41);
+}
+hr{
+    margin-bottom: 50px;
+}
+
+.square{
+    height: 150px;
+    background-image: url(imgs/positions-marks.png);
+    border: 4px dashed rgb(65, 194, 61);
+    border-radius: 3px;
+    margin: 10px 0 10px 0;
+    background-repeat: no-repeat;
+    background-size: 108%;
+    color: cyan;
+    text-shadow: 0 1px 10px rgb(19, 1, 24);
+    font-size: 30px;
+}
+#sq01{
+    background-position: left top;
+}
+#sq02{
+    background-position: bottom right;
+}
+#sq03{
+    background-position: center center;
+}
