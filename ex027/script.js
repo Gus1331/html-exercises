@@ -3,6 +3,7 @@ let swt2 = false
 let swt3 = false
 let swt4 = false
 let switchB
+let body = document.getElementById("body")
 
 function sswitch(x,swt) {
 
@@ -23,10 +24,12 @@ function sswt1(){
     switch (swt1){
         case true:
 
+            color1();
             swt1 = false;
             break;
         case false:
 
+            color2();
             swt1 = true;
             break;
     }
@@ -69,4 +72,13 @@ function sswt4(){
             swt4 = true;
             break;
     }
+}
+
+
+
+function color1(){
+    body.style = "background-color: rgb(173, 216, 230)"
+}
+function color2(){
+    body.style = "background-color:rgb(13, 43, 53)"
 }

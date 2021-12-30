@@ -9,6 +9,7 @@
 body{
     background-color: rgb(173, 216, 230);
     font-size: 1.2em;
+    transition: 1s;
 }
 
 h1{
