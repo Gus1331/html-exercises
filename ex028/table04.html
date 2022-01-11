@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex028.4</title>
+    <style>
+
+        body{
+            background-color: rgb(100, 149, 237);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: rgb(128, 128, 128);
+        }
+        td,th{
+            border: 1px solid rgb(0, 0, 0);
+            width: 150px;
+            padding: 6px;
+        }
+        td{
+            text-align: center;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: rgb(255, 255, 255);
+        }
+        tbody>tr:nth-child(even){
+            background-color: rgb(185, 185, 185);
+        }
+        thead>tr>td , tfoot>tr>td{
+            background-color: rgb(128, 128, 128);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Table 04</h1>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Score</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <th scope="row">Total Score</th>
+            <td>XXX,XXX</td>
+        </tfoot>
+
+        <tbody>
+
+            <tr>
+                <td>Mila</td>
+                <td>XXX,XXX</td>
+            </tr>
+            <tr>
+                <td>Sasha</td>
+                <td>XXX,XXX</td>
+            </tr>
+            <tr>
+                <td>Ford</td>
+                <td>XXX,XXX</td>
+            </tr>
+            <tr>
+                <td>Lily</td>
+                <td>XXX,XXX</td>
+            </tr>
+            <tr>
+                <td>Vernom</td>
+                <td>XXX,XXX</td>
+            </tr>
+            <tr>
+                <td>Nick</td>
+                <td>XXX,XXX</td>
+            </tr>
+
+        </tbody>
+
+        <caption>Game Results 2021</caption>
+
+    </table>
+
+</body>
+
+</html>
