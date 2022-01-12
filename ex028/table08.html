@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex028.8</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        table{
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            text-align: center;
+        }
+        th{
+            border: 1px solid rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.185);
+            font-weight: bold;
+            padding: 3px;
+            min-width: 5em;
+        }
+        td{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 3px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Table 08</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Group</th>
+                <th scope="col">Name</th>
+                <th colspan="3" scope="colgroup        ">Favorite Movies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Girls</th>
+                <td>Gwen S.</td>
+                <td>Interstellar</td>
+                <td>Rise of the Guardians</td>
+                <td>Matrix</td>
+            </tr>
+            <tr>
+                <td>Nico R.</td>
+                <td>The Hobbit</td>
+                <td>Lord of Rings</td>
+                <td>Bird Box</td>
+            </tr>
+            <tr>
+                <td>Mia W.</td>
+                <td>Annabele</td>
+                <td>Friday 13th</td>
+                <td>World War Z</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Boys</th>
+                <td>Eddie B.</td>
+                <td>Parasite</td>
+                <td>Spiderman 3</td>
+                <td>Alien x Predator</td>
+            </tr>
+            <tr>
+                <td>Delsin R.</td>
+                <td>Karma</td>
+                <td>Smoke</td>
+                <td>The Neon Demon</td>
+            </tr>
+            <tr>
+                <td>Steve R.</td>
+                <td>Land of Mine</td>
+                <td>Sherlock Holmes</td>
+                <td>Wonder Woman</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
