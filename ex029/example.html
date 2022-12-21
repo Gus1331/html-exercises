@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!-- esta tag sinaliza que este documento é do tipo HTML 5 -->
+<html lang="pt-br"> <!-- tag <html> define o documento a ser lido na página pelo navegador (lang="pt-br" para declarar o idioma da página português) -->
+
+<head> <!--Head seria a cabeça do site, onde acontece a maioria das confiurações que não aparecem no corpo do site -->
+
+
+    <meta charset="UTF-8"> <!-- aqui é um aviso para o arquivo que ele vai rodar com caracteres especiais, por exemplo o "ç" ãê -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- configuração para compatibilidade do navegador explorer, forçando o usuário a ter o navegador minimamente atualizado, para não tentar entrar no site com uma versão antiga do internet explorer e ter experiências ruins -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- com essa configuração, falamos ao arquivo HTML que o corpo do site vai se ajustar conforme a tela do usuário, desta forma é um primeiro passo para poder deixar o site responsivo 
+    obs: site responsivo é aquele que indenpendente da tela do usuário, o conteudo vai se ajustar para uma navegação melhor, por exemplo um site que mostra todo seu conteudo em uma tela de tv, mas ao mudar para o celular o site se adapta para funcionar com a tela menor
+    -->
+    <title>Exemplo</title> <!--Titulo do site, para identificação nas abas do navegador, normalmente é o nome do site ou materia especifica, ex: Mercado livre: melhor site etc blablabla ou "receita de bolo para festa - tudogostoso"-->
+
+    <style> /* tudo dentro desta tag o site vai ler como CSS (estilo) e aplicar SOMENTE PARA ESTA PÁGINA, caso vá configurar o estilo de vários sites de uma vez, o melhor a fazer é criar um arquivo .css e conectar apartir da tag <link>/ */
+
+
+        header { /* aqui abrimos "uma chave" para configurar uma tag ou mais especificada antes*/
+            background-color: rgb(212, 115, 115); /* dentro das chaves temos propriedades que modificam seu estilo ou comportamento, esta por ex muda a cor de fundo da divisão header (linha 80) */
+            color: rgb(240, 248, 255); /* muda a cor do texto */
+            padding-top: 10px; /* define um espaçamento para o inicio da divisão e o conteudo (temos aqui o espaçamento definido em px que seria pixel, mas tambem existem outras unidades de medida para isso, os mais ultilizados são px, em, %, vh) */
+            text-align: center; /* alinha o texto (center para centro, left esquerda, right direita) */
+            margin: 0; /* aqui definimos o tamanho da margem, que seria um espaço para afastar a divisão (header) de outras coisas, obs: aqui eu defini ela como 0 para não ter margem nenhuma, pois ela naturalmente já vem com uma margem padrão caso não configure, e note que o "0" não possui unidade como px, pois zero é sempre o mesmo valor em todas unidades */
+        }
+
+        #esquerdo { /* # para especificar o <id> esquerdo (section linha 85)*/
+            background-color: rgb(149, 201, 97);
+            display: inline-block; /* muda a forma em que a divisão se comporta, para permitir elementos ao lado do conteudo */
+            width: 25.3%; /* largura do conteudo, (% neste caso se refere a tela do usuario, então ela sempre vai ocuar 25% da tela) */
+            height: 260px;/* altura */
+            padding: 20px;
+            margin-left: 0px; /* margem esquerda apenas */
+        }
+        
+        nav, aside { /* com a "," eu especifico dois seletores para que as configurações dentro da chave se apliquem para os dois (linha 88,92) */
+            background-color: rgb(53, 141, 112);
+            height: 90px;
+            margin: 15px 5px; /* margem definindo margem em cima e baixo 15px, os lados ficam 5px */
+        }
+
+        section#direito { /* linha 99 */
+            background-color: rgb(25, 8, 66);
+            width: 69%;
+            height: 290px;
+            float: right; /* força a divisão a flutuar na divisão onde ela está (aqui é à direita) */
+            padding: 5px;
+        }
+
+        article { /* (linha 101) */
+            background-color: whitesmoke;
+        }
+
+        h1 { /* (linha 103) */
+            background-color: aquamarine;
+            height: 30px;
+        }
+
+        p { /* (linha 104) */
+            background-color: palevioletred;
+            height: 75px;
+        }
+
+        div { /* (linha 105) */
+            background-color: rgb(93, 93, 209);
+            height: 95px;
+        }
+        footer{ /* (linha 110) */
+            background-color: rgb(66, 16, 16);
+            height: 100px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+
+
+<body> <!-- corpo do site, ou seja, todo conteudo que vai aparecer para o usuário (estilo continua sendo diferente, logo cores, tamanho e posicionamento, fica em maior parte configurada dentro do css ou tag <style>/ (linha 16) ) -->
+
+    <header> <!--  header, uma tag que represanta uma divisão (<div> linha 105), porém ela tem o propósito de ser usada como cabeçalho, assim quando alguma ferramenta de pesquisa for vasculhar seu site, vai entender ele melhor  -->
+        Cabeçalho
+    </header>
+
+
+    <section id="esquerdo"> <!-- uma divisão para ser usada como SEÇÃO do site, e ter conteudos especificos (identificando ela especificamente para configurar somente ela ao invés de configurar todas Tag <section> de uma vez) -->
+        Seção
+
+        <nav> <!-- uma divisão para ser usada como uma forma de NAVEGAÇÃO do site, como redicionamento para outras partes do site etc -->
+            Navegação
+        </nav>
+
+        <aside> <!-- uma divisão para ser usada com um conteúdo de lado no sentido de ser algo extra para o conteudo principal -->
+            Publicidade
+        </aside>
+
+    </section>
+
+
+    <section id="direito">
+        Seção
+        <article> <!-- uma divisão para representar um artigo do site -->
+            Artigo
+            <h1>Titulo do artigo</h1> <!-- tag (h1) vai de h1 até h6, representando titulos e subtitulos, logo todos h1 são titulos principais,e h2 são subtitulos do h1 (obs:qualquer coisa procure por hierarquia de titulos) -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti soluta, molestias maiores odit velit sint veniam esse impedit deleniti, accusantium aut et aliquam inventore! Ea magni aut id esse? Assumenda.</p> <!-- esta tag é para parágrafos do site, ela funciona de uma forma especifica para parágrafos, sendo assim para mudar o parágrafo, ao invés de pular uma linha, o correto é fechar e abrir uma nova tag <p> obs: lorem é um texto em latim, no VS Code, ao digitar lorem e apertar enter vai ser gerado um texto genérico que é ultilidado pelos programadores para exemplo ou teste de texto -->
+                <div>Imagem</div> <!-- <div> é uma tag em que separamos uma parte do conteudo para uma melhor organização tanto do conteudo quando do estilo, quando definida um tamanho (width e height, linha 30,31 ou pelo tamanho do conteudo inserido, ex: o tamanho de uma img ou texto dentro da div) -->
+            </article>
+    </section>
+
+
+    <footer> <!-- uma divisão que representa o rodapé do ste, onde contem algumas informações ou links, depende do tipo de site -->
+        Rodapé
+    </footer>
+
+
+</body>
+</html>

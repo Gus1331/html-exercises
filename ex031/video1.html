@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex031.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Controles</h1>
+    <hr>
+    <div id="container" onmouseover="control(true);" onmouseout="control(false);">
+        <video id="video" controls src="solo.mp4" poster="poster.jpg"></video>
+        <div id="controlBar">
+            <button onclick="play();" id="mainBtn">Play</button>
+            <button onclick="stop();">Parar Video</button>
+            <button onclick="skip10(true);">Avançar 10s</button>
+            <button onclick="skip10(false);">Retroceder 10s</button>
+            <button onclick="speed(true);">Aumentar Velocidade</button>
+            <button onclick="speed(false);">Diminur velocidade</button>
+            <button onclick="volume(true);">Aumentar Volume</button>
+            <button onclick="volume(false);">Diminiur Volume</button>
+            <button onclick="mute(true);" id="muteBtn">Mutar video</button>
+        </div>
+    </div>
+    <a target="_blank" rel="external" href="https://www.youtube.com/watch?v=VjsuODsWx74">Clique aqui para ver o video no youtube</a>
+    <!--Este video foi escolido aleatórimente para motivos de estudo sendo de não minha autoria-->
+    <!--A foto usada na capa do video tambem não é de minha autoria e sua fonte é desconhecida-->
+    
+    <script defer src="script.js"></script>
+</body>
+</html>

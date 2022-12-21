@@ -1,0 +1,44 @@
+@charset "UTF-8";
+#container{
+    width: 70vw;
+    margin: auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+#container > video{
+    width: 100%;
+    max-height: 40vw;
+    background-color: rgb(0, 0, 0);
+}
+a{
+    color: rgba(220, 20, 60, 0.925);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    padding: 30px;
+}
+button{
+    background-color: rgb(150, 17, 61);
+    width: 80%;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(56, 1, 38);
+    font-size: 1.1em;
+    display: block;
+    margin: 5px auto;
+}
+button:active{
+    background-color: rgb(122, 12, 45);
+    color: rgb(0, 0, 0);
+}
+#controlBar{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: -30%;
+    width: 18vw;
+    height: 39vw;
+    padding: 3px;
+    box-sizing: border-box;
+    transition: 600ms;
+}
