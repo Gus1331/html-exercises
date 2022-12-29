@@ -1,12 +1,12 @@
 let screen = document.getElementById("screen");
 let brush = screen.getContext("2d");
 let circle = {
-    x : 300,
-    y : 225,
-    r : 150,
-    a : 0,
-    b : 0,
-    h : false
+    x : 300, //posicão x d do centro do arco
+    y : 225, //posição y
+    r : 150, //tamanho do raio
+    a : 0, //angulo em rad onde começa o arco
+    b : 0, //angulo final
+    h : false //antihorario falso
 }
 
 setInterval(loading,1);
