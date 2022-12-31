@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+#div0{
+    background-color: brown;
+    width: 100%;
+}
+#div1{
+    display: inline-block;
+    background-color: cadetblue;
+    width: calc(100% - 354px); /* */
+    height: 200px
+}
+#div2{
+    display: inline-block;
+    background-color: chocolate;
+    width: 350px;
+    height: 200px;
+}
+#div3{
+    background-color: crimson;
+    width: calc(100% - 300px); /* */
+    height: 250px;
+    margin: auto;
+}
