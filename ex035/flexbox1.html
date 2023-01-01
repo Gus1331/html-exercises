@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex035.1</title>
+    <style>
+        .container{
+            background-color: grey;
+            display: flex; /* Dis respeito ao comportamento dos elementos filhos*/
+            flex-direction: row; /* Define o comportamento como colunas ou linhas */
+            height: 333px;
+        }
+        .n1{
+            background-color: cadetblue;
+        }
+        .n2{
+            background-color: chartreuse;
+        }
+        .n3{
+            background-color: coral;
+        }
+        .element{
+            width: 23.3%;
+            height: calc(100% - 190px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao display flex/flexbox </h1>
+    <hr>
+    <div class="container">
+        <div class="element n1">1</div>
+        <div class="element n2">2</div>
+        <div class="element n3">3</div>
+    </div>
+</body>
+</html>
