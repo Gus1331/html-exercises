@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex035.1</title>
+    <style>
+        .container{
+            background-color: grey;
+            height: 333px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .n1{
+            flex-grow: 1; /* Permite o conteudo deste elemento crescer para se adaptar ao tamanho do pai */
+            background-color: cadetblue;
+        }
+        .n2{
+            flex-grow: 2; /* Além de permitir o conteudo se adaptar, também define q este é 2 vezes o tamanho dos outros */
+            background-color: chartreuse;
+        }
+        .n3{
+            flex-grow: 1;
+            background-color: coral;
+        }
+        .element{ 
+            flex-shrink: 0; /* não permite o conteudo deste elemento encolher para se adaptar ao tamanho do pai, neste caso não terá efeito pois os elementos não possuem um width definido */
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Grow / Shrink </h1>
+    <hr>
+    <div class="container">
+        <div class="element n1">1</div>
+        <div class="element n2">2</div>
+        <div class="element n3">3</div>
+    </div>
+</body>
+</html>
