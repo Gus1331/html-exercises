@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>ex036.1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container{
+            background-color: darkslategrey;
+            padding: 20px;
+            display: grid; /* Define comportamentos dos elementos filhos, podendo modificar suas ordens e alinhamentos */
+            grid-template-rows: auto auto; /* define o numero de linhas apartir do numero de valores, que podem ser fixos, relativos e adaptaveis */
+            grid-template-columns: auto auto auto; /* define o numero de colunas, exemplo de valores: 35px 20% auto */
+        }
+        .rect{
+            
+        }
+        .r1{
+            background-color: chartreuse;
+        }
+        .r2{
+            background-color: chocolate;
+        }
+        .r3{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Grid</h1>
+    <hr>
+    <div id="container">
+        <div class="rect r1">1</div>
+        <div class="rect r2">2</div>
+        <div class="rect r3">3</div>
+        <div class="rect r1">1</div>
+        <div class="rect r2">2</div>
+        <div class="rect r3">3</div>
+    </div>
+</body>
+</html>
