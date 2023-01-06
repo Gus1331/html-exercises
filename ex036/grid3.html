@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>ex036.3</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container{
+            background-color: darkslategrey;
+            padding: 20px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            justify-content: flex-start; /* adpta as linhas e colunas para ter exatamente o tamanho do conteudo e alinha todos sobre o elemento pai (horizontalmente) */
+            align-content: center; /* (verticalmente) */
+            grid-gap: 15px;
+        }
+        .rect{
+            width: 75px;
+            height: 75px;
+            
+        }
+        .r1{
+            background-color: chartreuse;
+        }
+        .r2{
+            background-color: chocolate;
+        }
+        .r3{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid: justify-content/align-content</h1>
+    <hr>
+    <div id="container">
+        <div class="rect r1">1</div>
+        <div class="rect r2">2</div>
+        <div class="rect r3">3</div>
+        <div class="rect r1">1</div>
+        <div class="rect r2">2</div>
+        <div class="rect r3">3</div>
+    </div>
+</body>
+</html>
