@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>ex036.2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes loadbar{
+            0%{width: 0;} /* cada seletor é referente ao momento da animação, assim 0% inicio e 100% fim */
+            25%{width: 60%;}
+            30%{width: 57%;}
+            46%{width: 63%;}
+            70%{width: 64%;}
+            75%{width: 05%;}
+            77%{width: 05%;}
+            100%{width: 100%;}
+
+        }
+        #background{
+            background-color: black;
+            position: relative;
+            width: 100%;
+            height: 3em;
+        }
+        #loadbar{
+            background-color: white;
+            position: absolute;
+            height: 6px;
+            width: 100%;
+            top: calc(50% - 3px);
+            animation-name: loadbar;
+            animation-duration: 20000ms;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animações de multiplos estágios</h1>
+    <hr>
+    <div id="background">
+        <div id="loadbar"></div>
+    </div>
+</body>
+</html>

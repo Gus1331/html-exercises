@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>ex037.4</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #subscriptionBox{
+            display: block;
+            background-color: darkorchid;
+            width: 500px;
+            height: 200px;
+            margin-left: 5%;
+            animation-name: boxmove;
+            animation-iteration-count: 3;
+            animation-fill-mode: backwards; /* Define que o primeiro frame da animação vai ficar pausado até o delay acabar, também pode deixar a animação pausada ao fim usando "foward" ou ambos jeitos "both" */
+            animation-direction: alternate; /* Reverte a animação após ser completada */
+            animation-delay: 3s;
+            animation-duration: 2s;
+        }
+        @keyframes boxmove{
+            from{margin-left: 101%;}
+            to{margin-left: 5%;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Animações alternativas e fill mode</h1>
+    <hr>
+    <span id="subscriptionBox"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ipsum repudiandae, fuga quibusdam ab vitae debitis numquam illo inventore officiis iusto! Ipsa autem in corrupti temporibus velit perferendis minima reprehenderit. </span>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>ex036.5</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes slip{
+            from{left: 0;}
+            to{left: calc(100% - 100px);}
+        }
+        .box{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(32, 32, 34);
+            animation-name: slip;
+            animation-duration: 5s;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+        }
+        .b1{animation-timing-function: linear;}
+        .b2{animation-timing-function: ease;} /* tipo padrão */
+        .b3{animation-timing-function: ease-in;}
+        .b4{animation-timing-function: ease-out;}
+        .b5{animation-timing-function: ease-in-out;}
+    </style>
+</head>
+<body>
+    <h1>Tipo de timing em animações</h1>
+    <hr>
+    <div class="box b1">Linear</div>
+    <div class="box b2">Ease</div> 
+    <div class="box b3">Ease-in</div>
+    <div class="box b4">Ease-out</div>
+    <div class="box b5">Ease-in-out</div>
+</body>
+</html>

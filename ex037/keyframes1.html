@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>ex037.1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #box{
+            width: 40%;
+            height: 30vw;
+            border-style: solid;
+            margin: auto;
+            animation-name: changeColor; /* chave que ativa o keyframe */
+            animation-duration: 40000ms; /* tempo de duração da animação */
+        }
+        @keyframes changeColor{ /* Muda propriedades apartir de uma chave criando uma animação */
+            from{background-color: crimson;} /* propriedades no começo da animação */
+            to{background-color: cornflowerblue;} /* propriedades no fim da animação */
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução a keyframes para animações</h1>
+    <hr>
+    <div id="box"></div>
+</body>
+</html>

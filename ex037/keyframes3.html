@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>ex036.3</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #display{
+            margin: auto;
+            border-style: solid;
+            width: 250px;
+            height: 2em;
+            animation-name: loop;
+            animation-duration: 6000ms;
+            animation-delay: 4s; /* define um tempo antes da animação começar após a página ser carrregada */
+            animation-iteration-count: infinite; /* define o numero de vezes que a animação vai se repetir */
+        }
+        @keyframes loop{
+            0%{
+                background-color: darkred;
+                transform: translateX(0);
+            }
+            30%{
+                background-color: darkblue;
+                transform: translateX(0);
+            }
+            35%{
+                background-color: darkolivegreen;
+                transform: translateX(-100%);
+            }
+            65%{
+                background-color: darkmagenta;
+                transform: translateX(-100%);
+            }
+            70%{
+                background-color: darkgreen;
+                transform: translateX(100%);
+            }
+            95%{
+                background-color: darkorange;
+                transform: translateX(100%);
+            }
+            100%{
+                background-color: darkred;
+                transform: translateX(0);
+            } 
+        }
+    </style>
+</head>
+<body>
+    <h1>Delay e Loop</h1>
+    <hr>
+    <div id="display"></div>
+</body>
+</html>
