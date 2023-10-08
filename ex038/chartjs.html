@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex038.1</title>
+    <style>
+        .graphic {
+            width: 450px;
+            display: inline-block;
+        }
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Introdução Chart.js</h1>
+    <hr>
+    <div class="graphic"> <!--div pai, para controlar tamanho-->
+        <canvas id="graphic1"></canvas> <!--canva que desenha o grafico apartir da biblioteca com valores especificados-->>
+    </div>
+    <div class="graphic">
+        <canvas id="graphic2"></canvas>
+    </div>
+</body>
+
+</html>
+
+<!-- SCRIPT --------------------------------------------------------------------------- -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Importando biblioteca -->
+
+<script>
+    const ctx = document.getElementById('graphic1'); // adicionar id do canva ao const
+
+    new Chart(ctx, { //*informações sobre o grafico
+        type: 'bar', //tipo
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'], // Nome dos elementos
+            datasets: [{
+                label: '# of Votes', //rotulo da unidade de medida
+                data: [12, 19, 3, 5, 2, 3], // Valores dos elementos em sequência
+                borderWidth: 1, // borda
+                borderColor: '#000', // cor borda
+                backgroundColor: 'red', // cor fundo barra
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    const ctx2 = document.getElementById('graphic2');
+    var elements = ["Agua", "Fogo", "Terra", "Ar"]; //grafico pode recever elementos e valores apartir de arrays
+    var valores = ["60", "5", "35", "30"]
+
+    new Chart(ctx2, {
+        type: 'bar',
+        data: {
+            labels: elements,
+            datasets: [{
+                label: 'dominancia',
+                data: valores,
+                borderWidth: 3
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>

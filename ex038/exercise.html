@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa & Inovação</title>
+</head>
+
+<body>
+    <h1>Gráficos de linha e barra</h1>
+    <hr>
+    <div class="chart">
+        <canvas id="myChart1"></canvas>
+    </div>
+    <div class="chart">
+        <canvas id="myChart2"></canvas>
+    </div>
+</body>
+
+</html>
+<style>
+    .chart {
+        width: 500px;
+        display: inline-block;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var label2 = ["12:00",
+        "13:00",
+        "14:00",
+        "15:00",
+        "16:00",
+        "17:00"];
+    var data1 = [30,
+        29,
+        28,
+        25,
+        22,
+        23];
+    var data2 = [80,
+        82,
+        80,
+        85,
+        80,
+        83];
+
+    var label1 = ["Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho"];
+    var data3 = [22,
+        24,
+        27,
+        23,
+        20,
+        18];
+    var data4 = [90,
+        89,
+        93,
+        87,
+        88,
+        82];
+
+    const ctx = document.getElementById('myChart1');
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: label2,
+            datasets: [
+                {
+                    label: 'umidade',
+                    data: data2,
+                    borderWidth: 4,
+                  
+                },
+                {
+                    label: 'Temperatura',
+                    data: data1,
+                    borderWidth: 4
+                }
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+
+    const ctx2 = document.getElementById('myChart2');
+
+    new Chart(ctx2, {
+        type: 'bar',
+        data: {
+            labels: label1,
+            datasets: [
+                {
+                    label: 'Temperatura Média',
+                    data: data1,
+                    borderWidth: 1,
+                    backgroundColor: "pink",
+                },
+                {
+                    label: 'Umidade média',
+                    data: data2,
+                    borderWidth: 1,
+                    backgroundColor: "#9BD0F5",
+                },
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100
+                }
+            }
+        }
+    });
+    /*
+    ["12:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00"]
+
+    [30,
+    29,
+    28,
+    25,
+    22,
+    23]
+
+    [80,
+    82,
+    80,
+    85,
+    80,
+    83]
+
+
+    ["Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho"]
+
+    [22,
+    24,
+    27,
+    23,
+    20,
+    18]
+
+    [90,
+    89,
+    93,
+    87,
+    88,
+    82]
+    */
+</script>
