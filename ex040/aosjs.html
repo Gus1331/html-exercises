@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex40</title>
+    <style>
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 3em;
+            background-image: linear-gradient(to left, red, blue);
+            color: white;
+            border-radius: 5px;
+            box-shadow: 5px 5px 3px rgba(2, 2, 43, 0.425);
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <h1>AOS.js Animate On Scroll</h1>
+    <hr>
+
+    <div data-aos="fade-down" class="box">Box 1</div>
+    <div data-aos="fade-up" class="box">Box 2</div>
+    <div data-aos="fade-up-left class="box">Box 3</div>
+    <div data-aos="flip-down" class="box">Box 4</div>
+    <div data-aos="zoom-in-down" class="box">Box 5</div>
+    <div class="box">Box 6</div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
